@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DanhsachbaihattuychonActivity">
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorMenu"
+        app:theme="@style/ToolbarColoredBackArrow"
+        android:id="@+id/toolbarDanhsachnhactuychon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_below="@id/toolbarDanhsachnhactuychon"
+        android:id="@+id/lnlayouttuychon"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/imgtuychon"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/anhnennhac"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rllayoyttuychon"
+        android:layout_marginTop="-65dp"
+        android:layout_below="@id/lnlayouttuychon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:id="@+id/tvtuychon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhạc trẻ" />
+        <ImageButton
+            android:id="@+id/btntuychon"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/icon_toplay"
+            android:layout_alignParentRight="true"
+            android:layout_width="55dp"
+            android:layout_height="55dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/lnlayouttuychon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewDSBHTuyChon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</RelativeLayout>

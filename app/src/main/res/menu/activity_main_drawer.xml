@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="Offline">
+        <menu>
+            <item
+                android:icon="@drawable/icon_danhsachnhac"
+                android:id="@+id/nav_danhsachnhac"
+                android:title="Danh sách nhạc" />
+            <item
+                android:icon="@drawable/icon_album"
+                android:id="@+id/nav_album"
+                android:title="Album" />
+            <item
+                android:icon="@drawable/icon_add"
+                android:id="@+id/nav_add"
+                android:title="Thêm nhạc trong máy" />
+            <item
+                android:icon="@drawable/icon_download"
+                android:id="@+id/nav_download"
+                android:title="Tải xuống" />
+        </menu>
+    </item>
+    <item android:title="Người dùng">
+        <menu>
+            <item
+                android:icon="@drawable/icon_dangky"
+                android:id="@+id/nav_dangky"
+                android:title="Đăng ký" />
+            <item
+                android:icon="@drawable/icon_dangnhap"
+                android:id="@+id/nav_dangnhap"
+                android:title="Đăng nhập" />
+        </menu>
+    </item>
+    <item
+        android:icon="@drawable/icon_infor"
+        android:id="@+id/nav_infor"
+        android:title="Thông tin" />
+    <item
+        android:icon="@drawable/icon_feedback"
+        android:id="@+id/nav_gopy"
+        android:title="Góp ý" />
+    <item
+        android:icon="@drawable/icon_output"
+        android:id="@+id/nav_dangxuat"
+        android:title="Đăng xuất" />
+</menu>
